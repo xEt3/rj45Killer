@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link href="css/main.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+
+<div>
+  <a class="effect1" href="#">
+    Let's kick them out!
+    <span class="bg"></span>
+  </a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+var elem = document.getElementById("myvideo");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+$( document ).ready(function() {
+    openFullscreen()
+});
+</script>
+<!--
+The size of the button is scaled 3x using css. You can reduce it to 1x. See the CSS.
+-->
+</html>
